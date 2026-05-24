@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Geist';
+    src: url('https://cdn.jsdelivr.net/font/geist/latest/Geist-Variable.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Geist Mono';
+    src: url('https://cdn.jsdelivr.net/font/geist-mono/latest/GeistMono-Variable.woff2') format('woff2');
+  }
+
+  body {
+    @apply font-sans transition-colors duration-300;
+  }
+
+  .dark {
+    @apply bg-black text-white;
+    color-scheme: dark;
+  }
+
+  .light {
+    @apply bg-white text-black;
+    color-scheme: light;
+  }
+
+  /* Cursor pointer for interactive elements as requested */
+  a, button, [role="button"], .clickable {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container-wide {
+    @apply max-w-7xl mx-auto px-6 sm:px-12;
+  }
+  
+  .vercel-card {
+    @apply border border-transparent hover:border-gray-200 dark:hover:border-neutral-800 transition-all duration-300;
+  }
+
+  /* Vertical Marquee Keyframes & Utilities */
+  @keyframes marquee-vertical {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+
+  .animate-vertical-marquee-fast {
+    animation: marquee-vertical 24s linear infinite;
+  }
+
+  .animate-vertical-marquee-slow {
+    animation: marquee-vertical 32s linear infinite;
+  }
+
+  /* Pause when any element in the container is hovered */
+  .marquee-vertical-container:hover .animate-vertical-marquee-fast,
+  .marquee-vertical-container:hover .animate-vertical-marquee-slow {
+    animation-play-state: paused;
+  }
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
