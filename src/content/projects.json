@@ -5,6 +5,10 @@
   "showLessLabel": "Show Less",
   "inquireLabel": "Inquire Edition",
   "simulatorLabel": "Launch Simulator",
+  "display": {
+    "defaultGridCols": 3,
+    "initialLoadCount": 6
+  },
   "items": [
     {
       "id": "01",

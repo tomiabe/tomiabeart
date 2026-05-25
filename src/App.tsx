@@ -59,12 +59,16 @@ const SOCIAL_ICONS: Record<string, React.ComponentType<{ size?: number }>> = {
 const PROJECTS: Project[] = projectsData.items as Project[];
 const LAB_ITEMS: LabItem[] = labData.items as LabItem[];
 
+const SLIDER = heroData.slider ?? { autoplayInterval: 5000, transitionDuration: 1500 };
+const DISPLAY = projectsData.display ?? { defaultGridCols: 3, initialLoadCount: 6 };
+const MARQUEE = labData.marquee ?? { fastColumnDuration: 24, slowColumnDuration: 32 };
+
 // --- Components ---
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
-  const [gridCols, setGridCols] = useState(3);
+  const [gridCols, setGridCols] = useState(DISPLAY.defaultGridCols);
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
   const [selectedLabItem, setSelectedLabItem] = useState<LabItem | null>(null);
   const [isLoadedMore, setIsLoadedMore] = useState(false);
@@ -121,7 +125,7 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % heroData.images.length);
-    }, 5000);
+    }, SLIDER.autoplayInterval);
     return () => clearInterval(interval);
   }, []);
 
@@ -208,7 +212,7 @@ export default function App() {
             initial={{ opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: SLIDER.transitionDuration / 1000, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0"
           >
             <img
@@ -291,7 +295,7 @@ export default function App() {
             gridCols === 3 ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' :
             'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
           }`}>
-            {PROJECTS.slice(0, isLoadedMore ? PROJECTS.length : (gridCols === 4 ? 8 : 6)).map((project) => (
+            {PROJECTS.slice(0, isLoadedMore ? PROJECTS.length : (gridCols === 4 ? DISPLAY.initialLoadCount + 2 : DISPLAY.initialLoadCount)).map((project) => (
               <ProjectItem
                 key={project.id}
                 project={project}
@@ -345,12 +349,12 @@ export default function App() {
               <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-gray-50 via-gray-50/80 to-transparent dark:from-neutral-950 dark:via-neutral-950/80 z-20 pointer-events-none" />
 
               <div className="grid grid-cols-2 gap-4 h-full">
-                <div className="flex flex-col gap-4 animate-vertical-marquee-fast">
+                <div className="flex flex-col gap-4" style={{ animation: `marquee-vertical ${MARQUEE.fastColumnDuration}s linear infinite` }}>
                   {[...LAB_ITEMS.slice(0, 4), ...LAB_ITEMS.slice(0, 4)].map((item, idx) => (
                     <LabCard key={`colA-${item.id}-${idx}`} item={item} onClick={() => setSelectedLabItem(item)} />
                   ))}
                 </div>
-                <div className="flex flex-col gap-4 animate-vertical-marquee-slow">
+                <div className="flex flex-col gap-4" style={{ animation: `marquee-vertical ${MARQUEE.slowColumnDuration}s linear infinite` }}>
                   {[...LAB_ITEMS.slice(4, 8), ...LAB_ITEMS.slice(4, 8)].map((item, idx) => (
                     <LabCard key={`colB-${item.id}-${idx}`} item={item} onClick={() => setSelectedLabItem(item)} />
                   ))}

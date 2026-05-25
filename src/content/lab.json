@@ -1,6 +1,10 @@
 {
   "sectionLabel": "Lab",
   "heading": "Experimental Playground",
+  "marquee": {
+    "fastColumnDuration": 24,
+    "slowColumnDuration": 32
+  },
   "description": "The Lab is a space for raw explorations, failed experiments, and serendipitous discoveries. This is where I test new algorithms and push the boundaries of creative technology.",
   "tools": [
     { "name": "Processing" },

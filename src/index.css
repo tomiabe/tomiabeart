@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Enable class-based dark mode — adds .dark ancestor check to all dark: utilities */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
@@ -62,9 +65,8 @@
     animation: marquee-vertical 32s linear infinite;
   }
 
-  /* Pause when any element in the container is hovered */
-  .marquee-vertical-container:hover .animate-vertical-marquee-fast,
-  .marquee-vertical-container:hover .animate-vertical-marquee-slow {
+  /* Pause all marquee columns when the container is hovered */
+  .marquee-vertical-container:hover > * > * {
     animation-play-state: paused;
   }
 }
