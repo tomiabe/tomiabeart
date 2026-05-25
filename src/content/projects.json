@@ -1,0 +1,140 @@
+{
+  "sectionLabel": "Projects",
+  "sectionHeading": "Selected Works",
+  "loadMoreLabel": "Load More Projects",
+  "showLessLabel": "Show Less",
+  "inquireLabel": "Inquire Edition",
+  "simulatorLabel": "Launch Simulator",
+  "items": [
+    {
+      "id": "01",
+      "title": "Ethereal Logic",
+      "category": "Generative Systems",
+      "description": "An exploration of recursive algorithms and fluid dynamics in a digital void.",
+      "longDescription": "Ethereal Logic is a series of generative artworks that utilize complex fluid simulation algorithms. By mapping mathematical recursion to visual outputs, the artist creates a bridge between cold logic and organic beauty.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Signal & Noise",
+      "category": "Computational Media",
+      "description": "Transforming radio frequency interference into poetic visual tapestries.",
+      "longDescription": "This project captures raw RF interference and processes it through a custom-built computational engine. The resulting waveforms are transformed into high-detail tapestries that visualize the invisible signals surrounding us.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Neural Bloom",
+      "category": "AI Art",
+      "description": "A study of machine learning latent spaces through the lens of digital botany.",
+      "longDescription": "Neural Bloom generates infinite varieties of fictional flora by navigating the latent space of a generative adversarial network (GAN) trained on thousands of botanical illustrations.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Kinetic Geometry",
+      "category": "Real-time 3D",
+      "description": "Interactive sculptures that respond to audience proximity and environmental sound.",
+      "longDescription": "These virtual kinetic sculptures use real-time WebGL rendering to create architectural forms that pulse and transform based on a feed of live audio and motion sensor data.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Silicon Threads",
+      "category": "Creative Coding",
+      "description": "Digital weaving patterns inspired by microchip architectures.",
+      "longDescription": "Silicon Threads is a software-based loom that simulates traditional weaving techniques but uses the logic gates and tracing patterns of computer processors as its primary structural guide.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1620121692029-d088224efc74?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1620121692029-d088224efc74?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "06",
+      "title": "Data Monuments",
+      "category": "Installation",
+      "description": "Projecting massive data streams onto physical architectural surfaces.",
+      "longDescription": "Large-scale projection mapping that visualizes city-wide energy consumption data in real-time, turning cold infrastructure into luminous reactive monuments.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "07",
+      "title": "Spectral Waves",
+      "category": "Computational Media",
+      "description": "Algorithmic spectrometry transforming live audio feeds into immersive laser formations.",
+      "longDescription": "Spectral Waves maps real-time acoustic signal feeds to precise mathematical wave-interference models. It projects high-density volumetric laser formations that materialize the complex timber of acoustic frequencies.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "08",
+      "title": "Generative Origami",
+      "category": "Real-time 3D",
+      "description": "Computational folding structures designed using interactive architectural folding rules.",
+      "longDescription": "Generative Origami investigates procedural self-folding geometry in virtual space. Users can interact with physics parameters to manipulate custom digital paper materials, creating complex origami sculptures in high definition.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "09",
+      "title": "Sensing Void",
+      "category": "Installation",
+      "description": "A responsive projection system mapping human traces into visual feedback streams.",
+      "longDescription": "Sensing Void uses optical-flow tracking models combined with high-contrast particles to render live, abstract human silhouettes on large gallery surfaces, visualizing physical space and human memory.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Synthetic Geologies",
+      "category": "Generative Systems",
+      "description": "Endless procedurally generated terrain maps built using custom vertex fragment shaders.",
+      "longDescription": "Synthetic Geologies renders high-fidelity topological terrains that mutate endlessly. Built in pure WebGL with customized simplex noise layers, it questions the boundaries between organic earth formations and virtual architectures.",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1620121692029-d088224efc74?q=80&w=2000&auto=format&fit=crop",
+      "detailsImages": [
+        { "url": "https://images.unsplash.com/photo-1620121692029-d088224efc74?q=80&w=2000&auto=format&fit=crop" },
+        { "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop" }
+      ]
+    }
+  ]
+}

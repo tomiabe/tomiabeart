@@ -1,0 +1,321 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # SETTINGS — Site-wide config: title, nav, footer
+  # ─────────────────────────────────────────────────────────────────────────────
+  - name: settings
+    label: Settings
+    type: file
+    path: src/content/settings.json
+    format: json
+    fields:
+      - name: siteTitle
+        label: Site Title
+        type: string
+        description: "Shown in the browser tab."
+
+      - name: navigation
+        label: Navigation
+        type: object
+        fields:
+          - name: logoText
+            label: Logo Text
+            type: string
+          - name: links
+            label: Nav Links
+            type: object
+            list:
+              collapsible:
+                collapsed: false
+                summary: "{label}"
+            fields:
+              - name: label
+                label: Label
+                type: string
+              - name: href
+                label: Anchor / URL
+                type: string
+                description: "Use #section-id for same-page anchors."
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: copyright
+            label: Copyright Line
+            type: string
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # HERO — Slideshow images and tagline
+  # ─────────────────────────────────────────────────────────────────────────────
+  - name: hero
+    label: Hero
+    type: file
+    path: src/content/hero.json
+    format: json
+    fields:
+      - name: tagline
+        label: Tagline
+        type: text
+        description: "The text shown in the white box over the hero slideshow."
+
+      - name: images
+        label: Slideshow Images
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "Slide {index}"
+        fields:
+          - name: url
+            label: Image
+            type: image
+            description: "Upload an image or paste an external URL (e.g. from Unsplash)."
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # PROJECTS — Selected works grid
+  # ─────────────────────────────────────────────────────────────────────────────
+  - name: projects
+    label: Projects
+    type: file
+    path: src/content/projects.json
+    format: json
+    fields:
+      - name: sectionLabel
+        label: Section Label (eyebrow)
+        type: string
+
+      - name: sectionHeading
+        label: Section Heading
+        type: string
+
+      - name: loadMoreLabel
+        label: "Load More" Button Label
+        type: string
+
+      - name: showLessLabel
+        label: "Show Less" Button Label
+        type: string
+
+      - name: inquireLabel
+        label: "Inquire" Button Label
+        type: string
+
+      - name: simulatorLabel
+        label: "Simulator" Button Label
+        type: string
+
+      - name: items
+        label: Projects
+        type: object
+        create: true
+        delete: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{id} — {title}"
+        fields:
+          - name: id
+            label: ID
+            type: string
+            description: "Short identifier shown as badge, e.g. 01"
+          - name: title
+            label: Title
+            type: string
+          - name: category
+            label: Category / Medium
+            type: string
+          - name: year
+            label: Year
+            type: string
+          - name: description
+            label: Short Description (grid card)
+            type: text
+          - name: longDescription
+            label: Long Description (lightbox)
+            type: text
+          - name: image
+            label: Thumbnail Image
+            type: image
+          - name: detailsImages
+            label: Detail Images (lightbox)
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "Image {index}"
+            fields:
+              - name: url
+                label: Image
+                type: image
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # LAB — Experimental playground section
+  # ─────────────────────────────────────────────────────────────────────────────
+  - name: lab
+    label: Lab
+    type: file
+    path: src/content/lab.json
+    format: json
+    fields:
+      - name: sectionLabel
+        label: Section Label (eyebrow)
+        type: string
+
+      - name: heading
+        label: Heading
+        type: string
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: tools
+        label: Tools / Tech Tags
+        type: object
+        list:
+          collapsible:
+            collapsed: false
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Tool Name
+            type: string
+
+      - name: items
+        label: Lab Items
+        type: object
+        create: true
+        delete: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{id} — {title}"
+        fields:
+          - name: id
+            label: ID
+            type: string
+            description: "Badge label, e.g. Lab-01"
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: image
+            label: Image
+            type: image
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # INFO — Artist bio section
+  # ─────────────────────────────────────────────────────────────────────────────
+  - name: info
+    label: Info
+    type: file
+    path: src/content/info.json
+    format: json
+    fields:
+      - name: sectionLabel
+        label: Section Label (eyebrow)
+        type: string
+
+      - name: heading
+        label: Heading
+        type: string
+
+      - name: image
+        label: Profile Photo
+        type: image
+
+      - name: bio
+        label: Bio Paragraphs
+        type: object
+        list:
+          collapsible:
+            collapsed: false
+            summary: "Paragraph {index}"
+        fields:
+          - name: text
+            label: Text
+            type: text
+
+      - name: focusHeading
+        label: "Focus" Column Heading
+        type: string
+
+      - name: focusAreas
+        label: Focus Areas
+        type: object
+        list:
+          collapsible:
+            collapsed: false
+            summary: "{item}"
+        fields:
+          - name: item
+            label: Area
+            type: string
+
+      - name: exhibitionsHeading
+        label: "Exhibitions" Column Heading
+        type: string
+
+      - name: exhibitions
+        label: Exhibitions
+        type: object
+        list:
+          collapsible:
+            collapsed: false
+            summary: "{item}"
+        fields:
+          - name: item
+            label: Exhibition
+            type: string
+            description: "e.g. Digital Signals (2024)"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # CONNECT — Contact section
+  # ─────────────────────────────────────────────────────────────────────────────
+  - name: connect
+    label: Connect
+    type: file
+    path: src/content/connect.json
+    format: json
+    fields:
+      - name: heading
+        label: Heading
+        type: string
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: email
+        label: Email Address
+        type: string
+
+      - name: socials
+        label: Social Links
+        type: object
+        list:
+          collapsible:
+            collapsed: false
+            summary: "{platform}"
+        fields:
+          - name: platform
+            label: Platform
+            type: select
+            options:
+              values:
+                - label: Twitter / X
+                  value: twitter
+                - label: GitHub
+                  value: github
+                - label: LinkedIn
+                  value: linkedin
+          - name: url
+            label: URL
+            type: string

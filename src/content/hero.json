@@ -1,0 +1,10 @@
+{
+  "tagline": "Tomi Abe Art is a digital art practice exploring systems, stories, and signals through generative and computational media.",
+  "images": [
+    { "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" },
+    { "url": "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=2565&auto=format&fit=crop" },
+    { "url": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2670&auto=format&fit=crop" },
+    { "url": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2574&auto=format&fit=crop" },
+    { "url": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2574&auto=format&fit=crop" }
+  ]
+}

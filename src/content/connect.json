@@ -1,0 +1,10 @@
+{
+  "heading": "Let's connect.",
+  "description": "Looking for collaborations, commissions, or just a chat about the future of computational media.",
+  "email": "tomi@abeart.com",
+  "socials": [
+    { "platform": "twitter", "url": "#" },
+    { "platform": "github", "url": "#" },
+    { "platform": "linkedin", "url": "#" }
+  ]
+}

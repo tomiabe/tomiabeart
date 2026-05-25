@@ -1,0 +1,63 @@
+{
+  "sectionLabel": "Lab",
+  "heading": "Experimental Playground",
+  "description": "The Lab is a space for raw explorations, failed experiments, and serendipitous discoveries. This is where I test new algorithms and push the boundaries of creative technology.",
+  "tools": [
+    { "name": "Processing" },
+    { "name": "p5.js" },
+    { "name": "ShaderArt" },
+    { "name": "OpenCV" },
+    { "name": "Stable Diffusion" },
+    { "name": "TouchDesigner" }
+  ],
+  "items": [
+    {
+      "id": "Lab-01",
+      "title": "Ethereal Logic Prototype",
+      "description": "A study of recursive systems using randomized cellular grids.",
+      "image": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "Lab-02",
+      "title": "Quantum Shaders v0.3",
+      "description": "Dynamic math-driven color fields rendered strictly in GLSL shaders.",
+      "image": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "Lab-03",
+      "title": "Noise Fields in 2D Space",
+      "description": "Simulating complex flowing rivers using raw Simplex Noise formulas.",
+      "image": "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "Lab-04",
+      "title": "Procedural Botanical Matrix",
+      "description": "Simulating L-Systems to generate computational tree and leaf patterns.",
+      "image": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "Lab-05",
+      "title": "Digital Signal Deconstruction",
+      "description": "Glighting sound streams in real-time onto an RGB pixel matrix.",
+      "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "Lab-06",
+      "title": "Mathematical Geometry Study",
+      "description": "A representation of organic patterns through strict crystalline rules.",
+      "image": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "Lab-07",
+      "title": "City-wide Grid Processing",
+      "description": "Generating visual abstract shapes mimicking London transport lines.",
+      "image": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "Lab-08",
+      "title": "Automated Weaving Loom Mock",
+      "description": "Programming traditional threads to respond to software logical states.",
+      "image": "https://images.unsplash.com/photo-1620121692029-d088224efc74?q=80&w=800&auto=format&fit=crop"
+    }
+  ]
+}

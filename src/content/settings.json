@@ -1,0 +1,16 @@
+{
+  "siteTitle": "Tomi Abe Art",
+  "navigation": {
+    "logoText": "TOMI ABE ART",
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Lab", "href": "#lab" },
+      { "label": "Info", "href": "#info" },
+      { "label": "Connect", "href": "#connect" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Tomi Abe Art Practice"
+  }
+}
