@@ -143,7 +143,7 @@ export default function App() {
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
             {settingsData.navigation.links.map(link => (
-              <a key={link.label} href={link.href} className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:text-white transition-colors">
+              <a key={link.label} href={link.href} className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors">
                 {link.label}
               </a>
             ))}
@@ -190,7 +190,7 @@ export default function App() {
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:text-white transition-colors flex items-center justify-between border-b border-gray-100 dark:border-neutral-900 pb-4 font-normal"
+                  className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors flex items-center justify-between border-b border-gray-100 dark:border-neutral-900 pb-4 font-normal"
                 >
                   {link.label}
                   <ChevronRight size={16} className="opacity-40" />
