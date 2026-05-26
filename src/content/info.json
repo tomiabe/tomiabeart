@@ -1,24 +1,46 @@
 {
   "sectionLabel": "Info",
   "heading": "Artist & Technologist",
-  "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
+  "image": "/images/Tomi Abe New Pic.png",
   "bio": [
-    { "text": "Tomi Abe is a Japanese-born artist and technologist based in London. His practice sits at the intersection of complex systems and human storytelling." },
-    { "text": "With a background in computer science and fine arts, Tomi uses custom code as his primary brush, building generative systems that explore the beauty of mathematical signals and the chaos of digital noise." },
-    { "text": "His work has been exhibited at various digital art festivals and galleries, focusing on the immersive potential of real-time computational media." }
+    {
+      "text": "Tomi Abe is a Nigerian-born artist and technologist based in Sydney. His practice sits at the intersection of complex systems and human storytelling."
+    },
+    {
+      "text": "With a background in computer science and fine arts, Tomi uses custom code as his primary brush, building generative systems that explore the beauty of mathematical signals and the chaos of digital noise."
+    },
+    {
+      "text": "His work has been exhibited at various digital art festivals and galleries, focusing on the immersive potential of real-time computational media."
+    }
   ],
   "focusHeading": "Focus",
   "focusAreas": [
-    { "item": "Generative Art" },
-    { "item": "Computational Design" },
-    { "item": "Installation Art" },
-    { "item": "Creative Technology" }
+    {
+      "item": "Generative Art"
+    },
+    {
+      "item": "Computational Design"
+    },
+    {
+      "item": "Installation Art"
+    },
+    {
+      "item": "Creative Technology"
+    }
   ],
   "exhibitionsHeading": "Exhibitions",
   "exhibitions": [
-    { "item": "Digital Signals (2024)" },
-    { "item": "Systemic Voids (2023)" },
-    { "item": "Algorithm Poetics (2022)" },
-    { "item": "Code as Form (2021)" }
+    {
+      "item": "Digital Signals (2024)"
+    },
+    {
+      "item": "Systemic Voids (2023)"
+    },
+    {
+      "item": "Algorithm Poetics (2022)"
+    },
+    {
+      "item": "Code as Form (2021)"
+    }
   ]
 }
